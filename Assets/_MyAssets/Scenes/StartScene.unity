@@ -368,7 +368,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 326337777}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286345152}
+        m_TargetAssemblyTypeName: UIManagerStartEnd, Assembly-CSharp
+        m_MethodName: ToggleInstructions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &326337777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1129,9 +1141,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9547169, g: 0.8669431, b: 0.048636444, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.95294124, g: 0.86666673, b: 0.04705883, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1150,7 +1162,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 782742269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286345152}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: Quitter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &782742269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1362,9 +1386,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.85974944, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.9547169, g: 0.9102101, b: 0.012609419, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1383,7 +1407,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 903229523}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286345152}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: LoadNexrScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &903229523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1821,8 +1857,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Danger Dungeon
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ae75d5462d6ad2a4b9fcc4a7d5868427, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: ae75d5462d6ad2a4b9fcc4a7d5868427, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 588ccf5bc89d58946971d4e459c04fd1, type: 2}
+  m_sharedMaterial: {fileID: 2125779516905741240, guid: 588ccf5bc89d58946971d4e459c04fd1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1947,6 +1983,7 @@ GameObject:
   - component: {fileID: 1286345151}
   - component: {fileID: 1286345150}
   - component: {fileID: 1286345149}
+  - component: {fileID: 1286345152}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2039,6 +2076,26 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1286345152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286345147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26f63731c60c24789370e39b06eaad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panelPrincipal: {fileID: 84908564}
+  _panelInstrction: {fileID: 328868435}
+  _boutonDemarrer: {fileID: 903229520}
+  _boutonRetourInstructions: {fileID: 326337774}
+  _txtTemps: {fileID: 0}
+  _txtCollisions: {fileID: 0}
+  _txtPointage: {fileID: 0}
+  _boutonRetourFin: {fileID: 0}
 --- !u!1 &1298097671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2897,9 +2954,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.96981126, g: 0.86812997, b: 0.020128137, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.9686275, g: 0.86666673, b: 0.019607844, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2918,7 +2975,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2056236137}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286345152}
+        m_TargetAssemblyTypeName: UIManagerStartEnd, Assembly-CSharp
+        m_MethodName: ToggleInstructions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2056236137
 MonoBehaviour:
   m_ObjectHideFlags: 0

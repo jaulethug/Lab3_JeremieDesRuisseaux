@@ -842,7 +842,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 782742269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286345152}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: Quitter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &782742269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1075,7 +1087,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 903229523}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286345152}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: StartScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &903229523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,15 +1536,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fin Du Jeu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ae75d5462d6ad2a4b9fcc4a7d5868427, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: ae75d5462d6ad2a4b9fcc4a7d5868427, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3a54316eb4fb9584faef1336243d4aaf, type: 2}
+  m_sharedMaterial: {fileID: -2024845002046293046, guid: 3a54316eb4fb9584faef1336243d4aaf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190284
+  m_fontColor: {r: 0.8, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1737,6 +1761,7 @@ GameObject:
   - component: {fileID: 1286345151}
   - component: {fileID: 1286345150}
   - component: {fileID: 1286345149}
+  - component: {fileID: 1286345152}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1828,6 +1853,26 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1286345152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286345147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26f63731c60c24789370e39b06eaad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panelPrincipal: {fileID: 0}
+  _panelInstrction: {fileID: 0}
+  _boutonDemarrer: {fileID: 0}
+  _boutonRetourInstructions: {fileID: 0}
+  _txtTemps: {fileID: 1150933833}
+  _txtCollisions: {fileID: 355578989}
+  _txtPointage: {fileID: 694872048}
+  _boutonRetourFin: {fileID: 0}
 --- !u!1 &1569963186
 GameObject:
   m_ObjectHideFlags: 0

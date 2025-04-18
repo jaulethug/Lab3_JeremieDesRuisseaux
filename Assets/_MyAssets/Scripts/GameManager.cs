@@ -15,8 +15,20 @@ public class GameManager : MonoBehaviour
     public int Score => _score; // accesseur attribut _score
     public float TimeStart => _timeStart; // accesseur attribut _timeStart
     private float[] _timeStarts;
+    private float _tempsDepart;
+    public float TempsDepart => _tempsDepart;
+    //ca vient de lautre//
+    private float _tempsFin;
+    public float TempsFin => _tempsFin;
+    private float _tempFinal;
+    public float TempFinal => _tempFinal;
+   //
 
-    private void Awake()
+
+   //
+
+
+private void Awake()
     {
         if (_instance == null)
         {
@@ -31,6 +43,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        //
+        _tempsDepart = Time.time;
+        //
         Application.targetFrameRate = 60;
         _score = 0;
         _firstMovelInLevel = false;
@@ -43,7 +58,10 @@ public class GameManager : MonoBehaviour
     {
         if (!_firstMovelInLevel)
         {
-            _timeStart = Time.time;
+            /*
+            _tempsDepart = Time.time;
+            */
+           // _timeStart = Time.time;
             _timeStarts[SceneManager.GetActiveScene().buildIndex] = _timeStart;
             _firstMovelInLevel = true;
         }
@@ -78,7 +96,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("temps : " + Time.time);
     }
 
-    public void DisplayEndGameMessages()
+   /* public void DisplayEndGameMessages()
     {
         Debug.Log("******* Fin de partie *******");
         var index = 0;
@@ -98,5 +116,16 @@ public class GameManager : MonoBehaviour
         print("Temps total sans les collisions = " + totalTime);
         print("Temps total avec la pénalité des collisions = " + (totalTime + _score));
         
+    }*/
+    //
+    public void SetNiveau(float p_temps)
+    {
+        _tempFinal = p_temps;
     }
+   /* public void SetTempsFin(float temps)
+    {
+        _tempsFin = temps;
+
+    }*/
+    //
 }

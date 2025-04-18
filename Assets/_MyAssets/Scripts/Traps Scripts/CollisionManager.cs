@@ -51,7 +51,7 @@ public class CollisionManager : MonoBehaviour
                     Debug.Log("End of the game!");
                     GameManager._instance.setLevelTimeAndCollision(Time.time, numScene);
                     collision.gameObject.SetActive(false);
-                    GameManager._instance.DisplayEndGameMessages();
+                  //  GameManager._instance.DisplayEndGameMessages();
                 }
                 else
                 {
